@@ -14,6 +14,7 @@ let primenumber = function(list){
         return divided<3;
     });
     //printing out the result
+    console.log("-------------using anonymous function------------");
     console.log(`Prime elements : ${prime.join(" ")}`);
 }
 //calling anonymous function
@@ -32,5 +33,6 @@ primenumber(array);
         return divided<3;
     });
     //printing out the result
+    console.log("---------------using IIFE function ----------");
     console.log(`Prime elements : ${prime.join(" ")}`);
 })(array));
