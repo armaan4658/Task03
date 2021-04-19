@@ -9,10 +9,14 @@ let merge = function(list1,list2){
     list1.sort(function(a, b){return a-b});
     if(list1.length%2===0){
         let median = list1.length/2;
-        console.log(list1[median-1]+list1[median]);
+        //printing out the output
+        console.log("-------------using anonymous function------------");
+        console.log("Median = "+ (list1[median-1]+list1[median]));
     }else{
         let median = list1.length/2;
-        console.log(list1[Math.round(median)]);
+        //printing out the output
+        console.log("-------------using anonymous function------------");
+        console.log("Median = "+ list1[Math.round(median)]);
     }
 }
 //calling anonymous function
@@ -21,10 +25,14 @@ merge(arr1,arr2);
 (function(list1){
     if(list1.length%2===0){
         let median = list1.length/2;
-        console.log(list1[median-1]+list1[median]);
+        //printing out the output
+        console.log("---------------using IIFE function ----------");
+        console.log("Median = "+ (list1[median-1]+list1[median]));
     }else{
         let median = list1.length/2;
-        console.log(list1[Math.round(median)]);
+        //printing out the output
+        console.log("---------------using IIFE function ----------");
+        console.log("Median = "+ list1[Math.round(median)]);
     }
 })(arr1);
 
