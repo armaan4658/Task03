@@ -7,6 +7,7 @@ let odd = function (list){
     //to return odd elments of the array
     let odd = list.filter((element)=>{return element%2!==0;});
     //printing out the odd array
+    console.log("-------------using anonymous function------------");
     console.log("Odd Array : " +odd.join(" "));
 }
 //calling the anonymous function
@@ -17,5 +18,6 @@ odd(array);
     //to return odd elments of the array
     let odd = list.filter((element)=>{return element%2!==0;});
     //printing out the odd array
+    console.log("---------------using IIFE function ----------");
     console.log("Odd Array : " +odd.join(" "));
 })(array);
