@@ -6,6 +6,7 @@ let sum = function(list){
     //creating a variable 's' to store the sum of array using arrow function
     let s = array.reduce((cv,elements)=>{return cv+elements;});
     //priting out the sum of array
+    console.log("-------------using anonymous function------------");
     console.log(`Sum of array : ${s}`);
 }
 //calling the anonymous array
@@ -15,6 +16,7 @@ sum(array);
     //creating a variable 's' to store the sum of array using arrow function
     let s = array.reduce((cv,elements)=>{return cv+elements;});
     //printing out the sum of array
+    console.log("---------------using IIFE function ----------");
     console.log(`Sum of array : ${s}`);
     
 })(array);
