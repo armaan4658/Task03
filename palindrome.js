@@ -14,8 +14,10 @@ function checkPalindrome(str) {
 let string=["mom","move","movom"];
 //creating anonymous function
 let palindrome = function(str){
+    console.log("-------------using anonymous function------------");
     for (i in str){
         if(checkPalindrome(str[i])==1){
+            //printing out the output            
             console.log(str[i]);
         }
     }
@@ -23,8 +25,10 @@ let palindrome = function(str){
 palindrome(string);
 //creating an IIFE function
 (function (str){
+    console.log("---------------using IIFE function ----------");
     for (i in str){
         if(checkPalindrome(str[i])==1){
+            //printing out the output
             console.log(str[i]);
         }
     }
